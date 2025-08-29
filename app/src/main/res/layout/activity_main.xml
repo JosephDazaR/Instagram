@@ -1,194 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="5dp"
-            android:src="@drawable/logo" />
-
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:paddingRight="100dp"
-            android:scaleType="fitStart"
-            android:src="@drawable/instagram" />
-
-        <ImageButton
-            android:id="@+id/notificacion"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:scaleType="fitCenter"
-            android:src="@drawable/notificacionf"></ImageButton>
-
-        <ImageButton
-            android:id="@+id/chat"
-            android:layout_width="40dp"
-            android:layout_height="38dp"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:scaleType="fitCenter"
-            android:src="@drawable/chat"></ImageButton>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageButton
-            android:id="@+id/mihistoria"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:padding="10dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/historiatu">
-
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/historia1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:scaleType="fitXY"
-            android:src="@drawable/historia">
-
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/historia2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:scaleType="fitXY"
-            android:src="@drawable/historia">
-
-        </ImageButton>
-
-        <ImageButton
-            android:id="@+id/historia3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="#00000000"
-            android:scaleType="fitXY"
-            android:src="@drawable/historia">
-
-        </ImageButton>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="tú"
-            android:textSize="18dp">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Anonimo"
-            android:textSize="18dp">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Anonimo"
-            android:textSize="18dp">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Anonimo"
-            android:textSize="18dp">
-
-        </TextView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:padding="5dp"
-            android:src="@drawable/cromo">
-
-        </ImageView>
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:paddingLeft="10dp"
-            android:text="Web"
-            android:textSize="25dp">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
-        </TextView>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/logo" />
 
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:padding="5dp"
-            android:src="@drawable/trespuntos">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:paddingRight="100dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/instagram" />
 
-        </ImageView>
+            <ImageButton
+                android:id="@+id/notificacion"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notificacionf"></ImageButton>
 
-    </LinearLayout>
+            <ImageButton
+                android:id="@+id/chat"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chat"></ImageButton>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="410dp">
-
-        <WebView
-            android:id="@+id/webView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-        </WebView>
+            <ImageButton
+                android:id="@+id/mihistoria"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/historiatu">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/historia1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/historia">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/historia2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/historia">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/historia3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/historia">
+
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="tú"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Anonimo"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Anonimo"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Anonimo"
+                android:textSize="18dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:src="@drawable/cromo">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Web"
+                android:textSize="25dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:src="@drawable/trespuntos">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="410dp">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+        </LinearLayout>
+
+
     </LinearLayout>
-
     <LinearLayout
+        android:id="@+id/bottomBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="90dp">
 
-        <ImageView
+        <ImageButton
+            android:scaleType="fitXY"
+            android:background="#00000000"
             android:id="@+id/casa"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -196,9 +211,11 @@
             android:padding="15dp"
             android:src="@drawable/hogar">
 
-        </ImageView>
+        </ImageButton>
 
-        <ImageView
+        <ImageButton
+            android:scaleType="fitXY"
+            android:background="#00000000"
             android:id="@+id/lupa"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -206,9 +223,11 @@
             android:padding="15dp"
             android:src="@drawable/lupa">
 
-        </ImageView>
+        </ImageButton>
 
-        <ImageView
+        <ImageButton
+            android:scaleType="fitXY"
+            android:background="#00000000"
             android:id="@+id/mas"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -216,9 +235,11 @@
             android:padding="15dp"
             android:src="@drawable/mas">
 
-        </ImageView>
+        </ImageButton>
 
-        <ImageView
+        <ImageButton
+            android:scaleType="fitXY"
+            android:background="#00000000"
             android:id="@+id/videos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -226,9 +247,11 @@
             android:padding="15dp"
             android:src="@drawable/video">
 
-        </ImageView>
+        </ImageButton>
 
-        <ImageView
+        <ImageButton
+            android:scaleType="fitXY"
+            android:background="#00000000"
             android:id="@+id/perfil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -236,10 +259,6 @@
             android:padding="15dp"
             android:src="@drawable/perfil">
 
-        </ImageView>
+        </ImageButton>
     </LinearLayout>
-</LinearLayout>
-
-
-
-
+</androidx.constraintlayout.widget.ConstraintLayout>
